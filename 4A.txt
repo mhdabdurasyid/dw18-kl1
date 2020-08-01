@@ -1,0 +1,16 @@
+--Tampilkan seluruh data dari table heroes beserta type dari hero tsb--
+SELECT heroes_tb.name, photo, type_tb.name as type FROM heroes_tb join type_tb WHERE heroes_tb.type_id=type_tb.id
+
+--Tampilkan seluruh data heroes berdasarkan type tertentu--
+SELECT heroes_tb.name, photo, type_tb.name as type FROM heroes_tb join type_tb WHERE heroes_tb.type_id=type_tb.id AND type_tb.name="Mage";
+SELECT heroes_tb.name, photo, type_tb.name as type FROM heroes_tb join type_tb WHERE heroes_tb.type_id=type_tb.id AND type_tb.name="Fighter";
+SELECT heroes_tb.name, photo, type_tb.name as type FROM heroes_tb join type_tb WHERE heroes_tb.type_id=type_tb.id AND type_tb.name="Marksman";
+SELECT heroes_tb.name, photo, type_tb.name as type FROM heroes_tb join type_tb WHERE heroes_tb.type_id=type_tb.id AND type_tb.name="Tank";
+SELECT heroes_tb.name, photo, type_tb.name as type FROM heroes_tb join type_tb WHERE heroes_tb.type_id=type_tb.id AND type_tb.name="Assassin"
+
+--Tampilkan spesifik data heroes dengan type nya--
+SELECT heroes_tb.name, photo, type_tb.name as type FROM heroes_tb join type_tb WHERE heroes_tb.type_id=type_tb.id AND heroes_tb.id=1
+SELECT heroes_tb.name, photo, type_tb.name as type FROM heroes_tb join type_tb WHERE heroes_tb.type_id=type_tb.id AND heroes_tb.id=2
+SELECT heroes_tb.name, photo, type_tb.name as type FROM heroes_tb join type_tb WHERE heroes_tb.type_id=type_tb.id AND heroes_tb.id=3
+SELECT heroes_tb.name, photo, type_tb.name as type FROM heroes_tb join type_tb WHERE heroes_tb.type_id=type_tb.id AND heroes_tb.id=4
+SELECT heroes_tb.name, photo, type_tb.name as type FROM heroes_tb join type_tb WHERE heroes_tb.type_id=type_tb.id AND heroes_tb.id=5
